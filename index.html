@@ -1,214 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍕 Sten 🌴</title>
-    <meta content="🍕 Sten Studio 🌴" property="og:title" />
-    <meta content="Welcome, I'm going to hack you if you press it! JUST KIDDING!! Greetings Sten! " property="og:description" />
-    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
-    <link rel="shortcut icon" href="Ontwerp zonder titel.png" type="image/Ontwerp zonder titel.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#6366f1',
-                        secondary: '#818cf8',
-                        dark: '#0f172a'
-                    },
-                    animation: {
-                        'gradient': 'gradient 8s linear infinite',
-                        'float': 'float 3s ease-in-out infinite',
-                        'spin-slow': 'spin 15s linear infinite',
-                    },
-                    keyframes: {
-                        gradient: {
-                            '0%, 100%': {
-                                'background-size': '200% 200%',
-                                'background-position': 'left center'
-                            },
-                            '50%': {
-                                'background-size': '200% 200%',
-                                'background-position': 'right center'
-                            }
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .gradient-text {
-            background: linear-gradient(to right, #6366f1, #818cf8, #c084fc, #6366f1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            animation: gradient 8s linear infinite;
-            background-size: 200% auto;
-        }
-        
-        .custom-shape-divider-bottom {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .gradient-border {
-            position: relative;
-            border-radius: 0.75rem;
-            background: linear-gradient(to right, #6366f1, #818cf8, #c084fc);
-            padding: 1px;
-        }
-
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="img/logo3.png">
+  <title>🔥Liberty State RP / Home</title>
 </head>
-<body class="bg-dark text-gray-100 font-sans overflow-x-hidden">
-    <div class="fixed inset-0 -z-10">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),rgba(15,23,42,0))]"></div>
-        <div class="absolute top-0 left-0 right-0 h-96 bg-gradient-to-b from-primary/5 to-transparent"></div>
-    </div>
+<body>
+  <h1>🔥Liberty State RP</h1>
+  <div>
+      <p>welcome to Liberty State RP, This server is an ERLC server and Discord, join the Discord server below!</p>
+  </div>
+</body>
 
-    <nav class="fixed w-full z-50 py-4 glass-effect">
+
+ <footer class="bg-gray-900/50 py-12">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center relative">
-                <a href="#" class="text-2xl font-bold gradient-text">StenStudio</a>
+            <div class="flex flex-col items-center">
+                <a href="https://stenstudio.vercel.app" class="text-3xl font-bold gradient-text mb-6">website made by Sten Studio</a>
                 
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="group">
-                        <span class="relative">
-                            Home
-                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                    </a>
-                    <a href="#about" class="group">
-                        <span class="relative">
-                            About
-                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                    </a>
-                    <a href="#Skills" class="group">
-                        <span class="relative">
-                            Skills
-                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                    </a>
-                    <a href="#projects" class="group">
-                        <span class="relative">
-                            Projects
-                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                    </a>
-                    <a href="#servers" class="group">
-                        <span class="relative">
-                            Servers
-                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                    </a>
-                </div>
-
-                <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-800">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
-                    </svg>
-                </button>
-
-                <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-dark glass-effect">
-                    <a href="#home" class="block px-4 py-2 text-gray-100 hover:bg-gray-800">
-                        Home
-                    </a>
-                    <a href="#about" class="block px-4 py-2 text-gray-100 hover:bg-gray-800">
-                        About
-                    </a>
-                    <a href="#Skills" class="block px-4 py-2 text-gray-100 hover:bg-gray-800">
-                        Skills
-                    </a>
-                    <a href="#projects" class="block px-4 py-2 text-gray-100 hover:bg-gray-800">
-                        Projects
-                    </a>
-                    <a href="#servers" class="block px-4 py-2 text-gray-100 hover:bg-gray-800">
-                        Servers
-                    </a>
-                </div>
+                <p class="text-gray-400 text-center">Copyright © 🔥Liberty State RP - 2025</p>
             </div>
         </div>
-    </nav>
-
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-        <div class="absolute inset-0 -z-10">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),rgba(15,23,42,0))]"></div>
-        </div>
-        
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
-            <div class="lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
-                <h1 class="text-5xl lg:text-7xl font-bold mb-6">
-                    Hi, I'm <span class="gradient-text">StenStudio</span>
-                </h1>
-                <div class="text-xl lg:text-2xl text-gray-400 mb-8">
-                    I'm a <span id="typed-text"></span>
-                </div>
-                <p class="text-gray-400 mb-8 max-w-lg">
-                    <b>PLS READ!!!</b><br>
-                    Some things like images don't work temporarily!!!
-                </p>
-                <div class="flex gap-4 justify-center lg:justify-start">
-                    <!-- <a href="#about" class="group relative px-6 py-3 overflow-hidden rounded-full bg-primary hover:bg-secondary transition-colors duration-300">
-                        <span class="relative z-10">About Me</span>
-                        <div class="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-                    </a> -->
-                    <a href="#about" class="group relative px-6 py-3 overflow-hidden rounded-full border border-primary text-primary hover:text-white transition-colors duration-300">
-                        <span class="relative z-10">About Me</span>
-                        <div class="absolute inset-0 bg-primary transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="lg:w-1/2 relative" data-aos="fade-left">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full animate-pulse"></div>
-                    <img src="your-photo.jpg" alt="Profile" class="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover relative z-10 mx-auto animate-float">
-                </div>
-                <div class="absolute top-0 -left-10 w-20 h-20 bg-primary/20 rounded-full animate-float" style="animation-delay: 0.5s"></div>
-                <div class="absolute bottom-0 right-0 w-32 h-32 bg-secondary/20 rounded-full animate-float" style="animation-delay: 1s"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-20 relative">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">About Me</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6" data-aos="fade-right">
-                    <p class="text-lg text-gray-300">
-                        Hey! I'm Sten
-
-                        I'm a code devloper for website's and discord bots.
-                    </p>
-                </div>
+    </footer>
+                <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1d25bfad-c0d0-445e-aab5-68c0f89b9a3d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
