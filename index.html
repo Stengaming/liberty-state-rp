@@ -28,3 +28,54 @@
 </div>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1d25bfad-c0d0-445e-aab5-68c0f89b9a3d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </html>
+
+ <footer class="bg-gray-900/50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <a href="#" class="text-3xl font-bold gradient-text mb-6">Devloper Sten</a>
+                
+                <p class="text-gray-400 text-center">© 2025 StenStudio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        new Typed('#typed-text', {
+            strings: ['Programmer', 'Gamer', 'Code Devloper'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16m-16 6h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.setAttribute('d', 'M4 6h16M4 12h16m-16 6h16');
+                }
+            }
+        });
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"91f95b68cf0296fd","version":"2025.1.0","r":1,"token":"07d93013c4414ad88c4809dbec65dbce","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
+                <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1d25bfad-c0d0-445e-aab5-68c0f89b9a3d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
